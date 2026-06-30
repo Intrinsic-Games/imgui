@@ -382,6 +382,7 @@ static int stb_compress_inner(stb_uchar *input, stb_uint length)
 {
     int literals = 0;
     stb_uint len,i;
+    (void)len;
 
     stb_uchar **chash;
     chash = (stb_uchar**) malloc(stb__hashsize * sizeof(stb_uchar*));
